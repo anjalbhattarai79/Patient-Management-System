@@ -1,6 +1,5 @@
 from fastapi import FastAPI
-from routes import define_routes
+from app.routes import define_routes
 
 app = FastAPI()  # object of FastAPI
-
 define_routes(app)

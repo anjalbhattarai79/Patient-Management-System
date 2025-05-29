@@ -1,7 +1,7 @@
 from fastapi import Path, HTTPException, Query
 from fastapi.responses import JSONResponse
-from models import Patient, PatientUpdate
-from crud import load_data, save_data
+from app.models import Patient, PatientUpdate
+from app.crud import load_data, save_data
 
 def define_routes(app):
     #first endpoint
