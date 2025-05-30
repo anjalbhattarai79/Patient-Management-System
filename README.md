@@ -37,6 +37,8 @@ PATIENT-MANAGEMENT-SYSTEM/
 ├── patients.json         # Patient database (auto-created)
 ├── README.md             # This documentation
 └── requirements.txt      # Python dependencies
+'''
+```
 
 ## Prerequisites
 - Python 3.8 or higher
@@ -52,7 +54,7 @@ PATIENT-MANAGEMENT-SYSTEM/
 2. Navigate to the project directory:
    ```bash
    cd patient_management
-   ```
+   
 3. Create a virtual environment (optional but recommended):
    ```bash
    python -m venv venv
@@ -61,13 +63,14 @@ PATIENT-MANAGEMENT-SYSTEM/
 4. Install the required dependencies:
    ```bash
    pip install fastapi pydantic uvicorn
+   pip install -r requirements.txt
    ```
 
 ## Running the Application
 1. Ensure you are in the `patient_management` directory.
 2. Run the FastAPI application using Uvicorn:
    ```bash
-   uvicorn main:app --reload
+   uvicorn app.main:app --reload
    ```
    The `--reload` flag enables auto-reload for development.
 3. The API will be available at `http://127.0.0.1:8000`.
